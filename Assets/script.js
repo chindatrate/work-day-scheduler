@@ -6,7 +6,7 @@ $("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
 //saveBtn click listener
 saveBtn.on("click", function () {
     var time = $(this).siblings(".hour").text();
-    var plan = $(this).siblings(".plan").text();
+    var plan = $(this).siblings(".plan").val();
     //console.log(this)
 
     // Save text in local storage
